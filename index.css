@@ -15,18 +15,40 @@ html, body {
     border-radius: 90px;
     flex-shrink: 0;
 } 
+.logo{
+    width: 150px;
+}
+img{
+    width: 100%;
+}
+
+/* button icons */
 .post-icon{
     width: 30px;
     height: 30px;
     padding-right: 20px;
 }
-img{
-    width: 100%;
-}
 .logo{
     width: 150px;
 }
 
+.heart:hover,
+.message:hover,
+.comment:hover{
+    animation: shake 500ms ease-in; 
+}
+
+@keyframes shake {
+    10% {
+        rotate: 12deg;
+    }
+    30%, 70%{ 
+        rotate: -25deg;
+    }
+    50%, 85% {
+        rotate: 25deg;
+    }
+}
 /* Box Styling */
 header .container{
     display: flex;
@@ -54,6 +76,9 @@ header, section{
     margin: 0px 10px;
     padding: 15px 0px;
 }
+.footer{
+    border-bottom: 25px solid #e0e0e0;
+}
 
 
 /* Text styling */
@@ -64,11 +89,15 @@ header, section{
     text-align: start;
     padding-left: 12px;
 }
+.account-name{
+    font-size: 20px;
+}
 
 a{
     font-weight: 600;
     color: black;
     text-decoration: none;
+
 }
 
 a:hover{
@@ -76,7 +105,7 @@ a:hover{
 }
 
 .caption, .likes{
-    font-size: 20px;
+    font-size: 17px;
 }
 
 
